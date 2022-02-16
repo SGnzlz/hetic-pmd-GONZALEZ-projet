@@ -19,7 +19,7 @@ h3{
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 120%;
     display: flex;
     align-items: center;
@@ -35,26 +35,26 @@ header{
     justify-content:center;
 }
 /**Container brand***/
-.contBrand{ 
+    .contBrand{ 
     position: static;
     display:flex;
     justify-content:center;
     align-items: baseline;
-    gap:4px;
+    gap:0.25rem;
     height:auto;
-    padding-top:2em;
-}
+    padding-top:2rem;
+    }
 /**Content Logo**/
-.headerLogo{
+        .headerLogo{
     position:relative;
-    width: 55px;
-    height: 31px;
+    width: 3.4rem;
+    height: 2rem;
     display:flex;
     justify-content:flex-start;
     align-items: baseline;
     top: calc(50% - 20px);
-}
-.brandText{
+        }
+        .brandText{
     width: 148px;
     height: 54px;
     font-family: Fredoka One;
@@ -66,93 +66,104 @@ header{
     justify-content:flex-start;
     align-items: center;
     color: #5F5F5F;
-}
-/******MAIN********MAIN********MAIN******MAIN*******MAIN*********/
+        }
 
-/******SECTION USER****/
-.userSection{
-    display:flex;
-    justify-content:center;
-    width: 100%;
-    height: 132px;
-    margin-top:1em;
-}
-    .userInfos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-        width: 169px;
-        height: 116px;
-        left: 17%;
-    }
-    .userProfilePic{
-        position: static;
-        width: 86px;
-        height: 86px;
-        left: 41.5px;
-        top: 0px;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        margin: 8px 0px;
-    }
-    .userName{
-        
-        font-family: Work Sans;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 120%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-    }
-
-/****************NAV TABS**********NAV TABS****************NAV TABS****/
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    position: static;
-    width: 100%;
-}
-.sectionTabTitle{
-    display:none;
-    /*ceci en desktop apparaîtra*/
-}
-.sectionConseil{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    position: absolute;
-    width: 100%;
-}
-.secTabs{
+/**********NAV*************-NAV*****************NAV****/
+.navSect{
     display:flex;
     flex-direction:column;
     justify-content: center;
     gap:20px;
     width: 100%;
-    margin: 20px 0px;
+    margin-top:1.25rem;
 }
+    .contUserInfo{
+    position:static;
+    display:flex;
+    justify-content:center;
+    width: 100%;
+    height: 132px;
+    margin-top:1em;
+    }
+    .userInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 169px;
+    height: 116px;
+    left: 17%;
+    }
+    .userProfilePic{
+    position: static;
+    width: 86px;
+    height: 86px;
+    left: 41.5px;
+    top: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+    }
+    .userName{
 
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    }
+    .menuSections{
+    text-transform:uppercase;
+    text-decoration:none;
+    }
+    .menuSections:active{
+    text-transform:uppercase;
+    text-decoration:underline;
+    }
+
+/******MAIN********MAIN********MAIN******MAIN*******MAIN*********/
+
+
+main{
+    position:static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+}
+  /****SECTION CONSEIL****/
+    .sectionConseil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:1.5rem;
+        gap:1.25rem;
+        width: 100%;
+    }
+  
+        .sectionTabTitle{
+        display:none;
+        /*ceci en desktop apparaîtra*/
+        }
+
+        
 .menuSections{
     display:flex;
     flex-grow:1;
     justify-content: center;
     gap:20px;
 }
-
 /****CONTENT****/
 .searchBar{
-    display:flex;
+    position:static;
     height: 36px;
     width:280px;
     border: 1px solid #428A60;
