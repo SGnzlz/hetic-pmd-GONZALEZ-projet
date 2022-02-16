@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lexend:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
     <title>Mealtips</title>
@@ -11,18 +14,51 @@
 <body>
     <header>
         <!--LOGO-->
+        <div id="js-contBrand" class="contBrand">
+            <div id="js-headerLogo" class="headerLogo">
+                <svg width="72" height="41" viewBox="0 0 72 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.6219 11.2045C25.8988 14.4672 21.3432 14.8388 18.9504 11.9118V11.9118C16.2833 8.64921 18.2643 3.83818 22.4143 3.49969V3.49969C26.5642 3.1612 29.5426 7.56773 27.6219 11.2045V11.2045Z" fill="#0C4137"/>
+                    <ellipse cx="45" cy="18.8586" rx="18.8586" ry="21.72" transform="rotate(-90 45 18.8586)" fill="#FFD672"/>
+                    <path d="M0.192555 9.74272C0.192555 18.0327 -1.50883 27.428 5.20331 33.2899C11.9154 39.1517 26.4913 41 35.9837 41C45.4761 41 60.1712 39.1517 66.8833 33.2899C73.5955 27.428 71.7748 18.0327 71.7748 9.74272L35.9837 9.74272L0.192555 9.74272Z" fill="#68B688"/>
+                    <rect y="19.7963" width="72" height="8.54366" fill="#D8F7CD"/>
+                    </svg>
+            </div>
+            <span id="js-brandText" class="brandText">Mealtips</span>
+        </div>
     </header>
+
+    <!-- SECTION USER-->
     <section id="js-userSection" class="userSection">
         <!--Section utilisateur-->
         <div id="js-userInfos" class="userInfos">
-            <div id="js-userProfilePic" class="userProfilePic"></div>
+            <div id="js-userProfilePic" class="userProfilePic">
+                <img src="D:\Documentos\HETIC\PMD2024\Projet Intégration\hetic-pmd-GONZALEZ-projet\Assets\Images\ProfilePics\Ellipse 32.png" alt="user profile picture">
+            </div>
+            <div id="js-userName" class="userName">
+                <p>Alicia Johnes</p>
+            </div>
         </div>
     </section>
-    <section id="js-sectionConseil" class="sectionConseil">
-        <!--Section utilisateur-->
-        <div id="js-userInfos" class="userInfos">
-            <div id="js-userProfilePic" class="userProfilePic"></div>
+    <nav id="js-tabsConseilInspi" class="tabs">
+            <div id="js-btnTab1" class="btnTab"><span>Conseil</span></div><!--Bouton1-->
+            <div id="js-btnTab2" class="btnTab"><span>Inspiration</span></div> <!--Bouton2-->
+    </nav>
+    <!-- SECTION CONSEIL-->
+    <section id="js-sectionConseil" class="sectionConseil"><!--Section conseil-->
+        <div id="js-searchBar1" class="searchBar">
+            <div id="logoSearchBar1" class="logoBtn"></div>
+            <div id="logoSearchBar1bis" class="logoBtn2"></div>
+        </div>
+        <!-- Cards spécialistes-->
+
+    </section>
+    <!-- SECTION INSPIRATION-->
+    <section id="js-sectionInspiration" class="sectionInspiration"><!--Section inspiration-->
+        <!--Section articles inspiration-->
+        <div id="js-contArt" class="contArt"> <!--cont articles-->
+            <div id="js-cardArt" class="cardArt"></div> <!--CardArt-->
         </div>
     </section>
+
 </body>
 </html>
