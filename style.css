@@ -1,3 +1,13 @@
+@font-face{
+    font-family:"Fredoka One";
+    src: url ("hetic-pmd-GONZALEZ-projet/Assets/Fonts/Fredoka_One/FredokaOne-Regular.woff2");
+}
+
+@font-face{
+    font-family:"Lexend";
+    src: url ("hetic-pmd-GONZALEZ-projet/Assets/Fonts/Lexend/Lexend-Bold.woff2","hetic-pmd-GONZALEZ-projet/Assets/Fonts/Lexend/Lexend-Medium.woff2", "hetic-pmd-GONZALEZ-projet/Assets/Fonts/Lexend/Lexend-Regular.woff2", "hetic-pmd-GONZALEZ-projet/Assets/Fonts/Lexend/Lexend-SemiBold.woff2");
+}
+
 body{
     width:100%;
     height:100%;
@@ -7,7 +17,7 @@ body{
 }
 h3{
     /* Mealtips_h3 */
-    font-family: 'Work sans';
+    font-family: 'Work Sans';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -147,11 +157,12 @@ main{
 /****CONTENT****/
 
 .searchBar{
-    height: 48px;
+    height: 36px;
     width:280px;
     border: 1px solid #428A60;
     box-sizing: border-box;
     border-radius: 50px;
+    padding:4px;
 }
 /****CARD PROFILES****/
 
