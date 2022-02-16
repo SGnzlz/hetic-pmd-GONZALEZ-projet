@@ -129,7 +129,6 @@ header{
 
 /******MAIN********MAIN********MAIN******MAIN*******MAIN*********/
 
-
 main{
     position:static;
     display: flex;
@@ -139,69 +138,61 @@ main{
     padding: 0px;
     width: 100%;
 }
-  /****SECTION CONSEIL****/
-    .sectionConseil{
+/****SECTION CONSEIL****/
+    .sectionConseil{/*Container section conseil*/
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top:1.5rem;
         gap:1.25rem;
-        width: 100%;
+        width: 90%;
     }
-  
         .sectionTabTitle{
         display:none;
         /*ceci en desktop apparaîtra*/
         }
-
-        
-.menuSections{
-    display:flex;
-    flex-grow:1;
-    justify-content: center;
-    gap:20px;
-}
+    .menuSections{
+        display:flex;
+        flex-grow:1;
+        justify-content: center;
+        gap:20px;
+    }
 /****CONTENT****/
-.searchBar{
-    position:static;
-    height: 36px;
-    width:280px;
-    border: 1px solid #428A60;
-    box-sizing: border-box;
-    border-radius: 50px;
-    padding:4px;
-}
+    .searchBar{
+        position:static;
+        height: 2.5rem;
+        width:280px;
+        border: 1px solid #428A60;
+        box-sizing: border-box;
+        border-radius: 50px;
+        padding:0.25rem;
+    }
 /****CARD PROFILES****/
-
-/* Description */
-.cardPro{
-    width: 20%;
-    gap:2px;
-    height: auto;
-    display:flex;
-    justify-content: center;
-}
-.contProfInfo{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-}
-.txtProfInfo{
-    position: static;
-    width: 211px;
-    height: 20px;
-    left: calc(50% - 211px/2);
-    top: calc(50% - 20px/2 + 12px);
-    font-family: Work Sans;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 14px;
-    color: #357377;
-    mix-blend-mode: normal;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 0px 0px;
-}
+    .cardPro{/**Container card*/
+        min-width:17rem;
+        height:auto;
+        gap:0.25rem;
+        display:flex;
+        justify-content:flex-start;
+        align-items:center;
+        flex-wrap:wrap;
+    }
+    .contProfInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .txtProfInfo{
+        position: static;
+        max-width: 13rem;
+        height:auto;
+        display:flex;
+        flex-wrap:wrap;
+        font-family: Work Sans;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 14px;
+        color: #357377;
+        mix-blend-mode: normal;
+    }
 /****CARD ARTICLES****/
