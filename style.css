@@ -1,6 +1,3 @@
-*{
-    font-family: 'Work Sans', sans-serif;
-}
 body{
     width:100%;
     height:100%;
@@ -9,118 +6,136 @@ body{
     font-family: 'Work Sans', sans-serif;
 }
 
-
-/****HEADER****/
+/***********HEADER****************HEADER*********HEADER***********/
 header{
     width: 100%;
+    height:auto;
+    display:flex;
+    justify-content:center;
 }
-
-.contBrand{
-    position: absolute;
+/**Container brand***/
+.contBrand{ 
+    position: static;
     display:flex;
     justify-content:center;
     align-items: baseline;
-
-    width: 208px;
-    height: 54px;
-    left: 17%;
-    top: 47px;
+    gap:4px;
+    height:auto;
+    padding-top:2em;
 }
+/**Content Logo**/
 .headerLogo{
-    position: absolute;
+    position:relative;
     width: 55px;
     height: 31px;
-    right: 155px;
     display:flex;
     justify-content:flex-start;
     align-items: baseline;
-    top: calc(50% - 16px);
+    top: calc(50% - 20px);
 }
 .brandText{
-    position: absolute;
     width: 148px;
     height: 54px;
-    left: 62px;
-    top: 0px;
-
     font-family: Fredoka One;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
     line-height: 150%;
-/* identical to box height, or 54px */
     display: flex;
     justify-content:flex-start;
     align-items: center;
     color: #5F5F5F;
 }
+/******MAIN********MAIN********MAIN******MAIN*******MAIN*********/
 
-/****SECTION USER****/
-
+/******SECTION USER****/
 .userSection{
-    position: relative;
-    width: 388px;
+    display:flex;
+    justify-content:center;
+    width: 100%;
     height: 132px;
-    left: 1px;
-    top: 137px;
-
+    margin-top:1em;
 }
-.userInfos{
+    .userInfos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        width: 169px;
+        height: 116px;
+        left: 17%;
+    }
+    .userProfilePic{
+        position: static;
+        width: 86px;
+        height: 86px;
+        left: 41.5px;
+        top: 0px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 8px 0px;
+    }
+    .userName{
+        
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+        /* identical to box height, or 22px */
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+/****************NAV TABS**********NAV TABS****************NAV TABS****/
+main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0px;
-
-    position: relative;
-    width: 169px;
-    height: 116px;
-    left: 17%;
-}
-
-.userProfilePic{
     position: static;
-    width: 86px;
-    height: 86px;
-    left: 41.5px;
-    top: 0px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 8px 0px;
+    width: 100%;
 }
-
-.userName{
-    font-family: Work Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 120%;
-    /* identical to box height, or 22px */
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-/****TABS****/
 .sectionConseil{
-    /* Fonctions */
-position: relative;
-width: 349px;
-height: 550px;
-left: 26px;
-top: 278px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+    height: 483px;
+    left: 21px;
+    top: 269px;
+}
+.tabs{
+    position: static;
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    width: 100%;
+    height: 48px;
+    margin: 20px 0px;
+}
+.btnTab{
+    display:flex;
+    justify-content:center;
+    width:fit-content;
+    height:20px;
 }
 
-.tabs{
-    /* Tab_conseilInspiration */
-position: relative;
-display:flex;
-justify-content:center;
-gap:36px;
-width: 328px;
-height: 48px;
-top: 150px;
-}
 /****CONTENT****/
+
+.searchBar{
+    height: 48px;
+    width:280px;
+    border: 1px solid #428A60;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
 /****CARD PROFILES****/
 /****CARD ARTICLES****/
