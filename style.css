@@ -130,19 +130,19 @@ header{
 /******MAIN********MAIN********MAIN******MAIN*******MAIN*********/
 
 main{
-    position:static;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    width: 100%;
+        position:static;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        width: 100%;
 }
 /****SECTION CONSEIL****/
     .sectionConseil{/*Container section conseil*/
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items:center;
         margin-top:1.5rem;
         margin-bottom:1.5rem;
         gap:1.25rem;
@@ -197,27 +197,24 @@ main{
 
 /****CARD PROFILES****/
     .cardPro{/**Container card*/
-        min-width:17rem;
-        height:auto;
-        gap:0.25rem;
         display:flex;
         justify-content:flex-start;
-        align-items:center;
-        flex-wrap:wrap;
+        height:auto;
+        gap:0.25rem;
     }
         .contProfInfo{
             display: flex;
-            flex-direction: column;
+            flex-direction:column ;
+            justify-content:center;
             align-items: flex-start;
         }
         .txtProfInfo{
-            position: static;
-            max-width: 13rem;
+            width:13rem;
             height:auto;
             display:flex;
-            flex-wrap:wrap;
             font-family: Work Sans;
             font-style: italic;
+            text-align:left;
             font-weight: normal;
             font-size: 14px;
             color: #357377;
