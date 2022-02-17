@@ -176,6 +176,7 @@ main{
     }
     .contLeftSearch{
         position:static;
+        flex-grow:1;
         height:2rem;
         display:flex;   
         align-items:center;
@@ -184,13 +185,12 @@ main{
     }
     input{
         border:none;
-        width:fit-content;
+        width:100%;
     }
     input:focus{
         outline:none;
     }
     input::placeholder{
-        width:fit-content;
         font-family:"Work Sans";
         font-size:0.875rem;
     }.contLeftSearch
