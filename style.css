@@ -150,7 +150,7 @@ main{
 }
 /****SECTION CONSEIL****/
     .sectionConseil{/*Container section conseil*/
-        display: none;
+        display: flex;
         flex-direction: column;
         align-items:center;
         margin-top:1.5rem;
@@ -243,7 +243,7 @@ main{
 }
 /****CARD ARTICLES****/
 .cardArticle{/**Container card*/
-    display:flex;
+    display:none;
     flex-direction:column;
     justify-content:center;
     height:auto;
