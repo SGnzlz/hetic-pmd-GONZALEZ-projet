@@ -14,7 +14,7 @@
 <body>
     <header>
         <!--LOGO-->
-        <div class="contBrand">
+        <figure class="contBrand">
             <div class="headerLogo">
                 <svg width="72" height="41" viewBox="0 0 72 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M27.6219 11.2045C25.8988 14.4672 21.3432 14.8388 18.9504 11.9118V11.9118C16.2833 8.64921 18.2643 3.83818 22.4143 3.49969V3.49969C26.5642 3.1612 29.5426 7.56773 27.6219 11.2045V11.2045Z" fill="#0C4137"/>
@@ -24,7 +24,8 @@
                 </svg>
             </div>
             <span class="brandText">Mealtips</span>
-        </div>
+        </figure>
+        <figcaption>Logo Mealtips</figcaption>
     </header>
     <!-- NAV-->
     <nav class="navSect">
@@ -41,8 +42,14 @@
         </div>
         <!--Navigateur Tabs-->
         <ul class= "menuSections">
-            <li class="menuTabItem"><span>Conseil</span></li>
-            <li class="menuTabItem"><span>Inspiration</span></li>
+            <li class="menuTabItem"><!--TAB1: CONSEIL-->
+                <input type="radio" name="tabl" id="tab-nav1">
+                <label for="tab-nav1">Conseil</label>
+            </li>
+            <li class="menuTabItem"><!--TAB1: CONSEIL-->
+                <input type="radio" name="tabl" id="tab-nav2">
+                <label for="tab-nav2">Inspiration</label>
+            </li>
         </ul>
     </nav>
     <!-------------------------MAIN------------------------------------>
@@ -107,10 +114,45 @@
             </article>
         </section>
         <!-- SECTION INSPIRATION-->
-        <section class="sectionInspiration"><!--Section inspiration-->
-
+        <section class="sectionInspi"><!--Section inspiration-->
             <h2 class ="sectionTabTitle">Inspiration</h2>
-            <!-- Cards article-->     
+            <div class="searchBar">
+                <div class="contLeftSearch">
+                    <div class="logoBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_100_515)">
+                            <path d="M6.387 15.516C4.93456 13.534 4.28402 11.0767 4.56554 8.63572C4.84706 6.19471 6.03988 3.95001 7.90535 2.35069C9.77082 0.75138 12.1714 -0.0845965 14.6267 0.0100132C17.0821 0.104623 19.4112 1.12284 21.1481 2.86096C22.885 4.59908 23.9015 6.92891 23.9944 9.38435C24.0872 11.8398 23.2495 14.2397 21.6489 16.1041C20.0482 17.9684 17.8027 19.1596 15.3615 19.4394C12.9203 19.7192 10.4634 19.0669 8.4825 17.613H8.484C8.439 17.673 8.391 17.73 8.337 17.7855L2.562 23.5605C2.28074 23.842 1.89918 24.0002 1.50128 24.0003C1.10337 24.0004 0.721708 23.8425 0.440247 23.5612C0.158785 23.28 0.000581741 22.8984 0.000442505 22.5005C0.000301361 22.1026 0.158236 21.721 0.439497 21.4395L6.2145 15.6645C6.26813 15.6102 6.32579 15.5601 6.387 15.5145V15.516ZM6 9.75C6 10.8334 6.21339 11.9062 6.62799 12.9071C7.04259 13.9081 7.65028 14.8175 8.41636 15.5836C9.18245 16.3497 10.0919 16.9574 11.0929 17.372C12.0938 17.7866 13.1666 18 14.25 18C15.3334 18 16.4062 17.7866 17.4071 17.372C18.4081 16.9574 19.3175 16.3497 20.0836 15.5836C20.8497 14.8175 21.4574 13.9081 21.872 12.9071C22.2866 11.9062 22.5 10.8334 22.5 9.75C22.5 7.56196 21.6308 5.46354 20.0836 3.91637C18.5365 2.36919 16.438 1.5 14.25 1.5C12.062 1.5 9.96354 2.36919 8.41636 3.91637C6.86919 5.46354 6 7.56196 6 9.75Z" fill="#5F5F5F"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_100_515">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <input class="field" type="search" id="searchArticle" name="searchSpe" aria-label="Search through site content" placeholder="Chercher un article">
+                </div>
+                <div class="logoBtn"></div>
+            </div>
+             <!-- Cards article-->    
+            <article class="cardArticle">
+                <div class="cardAuthor">
+                    <div class="profPicMini">
+                        <img src="Assets/Images/ProfilePics/Small/ellipse3.png" alt="profile picture miniature">
+                    </div>
+                    <div class="cardAuthor">
+                        <div class="contAuthorInfo">
+                            <h3 class="authorName">Marc Deneuve</h3>
+                            <p class="txtAuthorInfo">Diététicien, spécialité sport</p>
+                        </div>
+                    </div>
+                </div>
+                <img class="artPic" src="Assets/Images/ArticlePics/foodPic1_300.jpg" alt="pizza">
+                <div class="contArt">
+                    <h3>Titre de l'article</h3>
+                    <p class="prevArt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae cupiditate, iste placeat, et amet voluptates ex ut nihil necessitatibus quia cum maiores eveniet, sint nulla.</p>
+                </div>
+            </article>
         </section>
     </main>
 </body>

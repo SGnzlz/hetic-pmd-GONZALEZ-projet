@@ -26,6 +26,9 @@ h3{
     text-align: center;
     color: #5F5F5F;
 }
+figcaption{
+    display:none;
+}
 
 /***********HEADER****************HEADER*********HEADER***********/
 header{
@@ -118,13 +121,20 @@ header{
     align-items: center;
     text-align: center;
     }
-    .menuSections{
-    text-transform:uppercase;
-    text-decoration:none;
+
+/*************TABS*******/
+    .menuSections input {
+        display:none;
     }
-    .menuTabItem:active{
-    text-transform:uppercase;
-    text-decoration:underline;
+    .menuSections{
+        text-transform:uppercase;
+        text-decoration:none;
+    }
+    .menuTabItem input:checked + label{
+        text-transform:uppercase;
+        text-decoration:underline;
+        font-weight:600;
+        color:#357377;
     }
 
 /******MAIN********MAIN********MAIN******MAIN*******MAIN*********/
@@ -140,7 +150,7 @@ main{
 }
 /****SECTION CONSEIL****/
     .sectionConseil{/*Container section conseil*/
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items:center;
         margin-top:1.5rem;
@@ -220,4 +230,57 @@ main{
             color: #357377;
             mix-blend-mode: normal;
         }
+
+/********SECTION INSPIRATION********/
+.sectionInspi{/*Container section conseil*/
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+    gap:1.25rem;
+    width: 90%;
+}
 /****CARD ARTICLES****/
+.cardArticle{/**Container card*/
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:auto;
+    gap:1rem;
+}
+.prevArt{
+    text-align:justify;
+    display:flex;
+    flex-wrap:none;
+
+}
+    /***CARD AUTHOR**/
+    .cardAuthor{
+        display:flex;
+        flex-wrap: wrap;
+        gap:0.25rem;
+        min-width:13rem;
+    }
+    .contAuthorInfo{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: flex-start;
+    }
+    .txtAuthorInfo{
+        width:13rem;
+        height:auto;
+        display:flex;
+        font-family: Work Sans;
+        font-style: italic;
+        text-align:left;
+        font-weight: normal;
+        font-size: 14px;
+        color: #357377;
+        mix-blend-mode: normal;
+    }
+    .authorName{
+        font-size:1rem;
+        font-weight:500;
+    }
