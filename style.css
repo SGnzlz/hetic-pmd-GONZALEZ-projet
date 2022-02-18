@@ -149,8 +149,6 @@ main{
         display: flex;
         flex-direction: column;
         align-items:center;
-        overflow-y: scroll;
-        scroll-behavior: smooth;
         margin-top:1.5rem;
         margin-bottom:1.5rem;
         gap:1.25rem;
