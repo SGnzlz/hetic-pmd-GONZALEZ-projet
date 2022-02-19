@@ -82,7 +82,7 @@ header{
         display:flex;
         justify-content:center;
         width: 100%;
-        height: 132px;
+        height: 8.25rem;
     }
     .userInfo{
         display: flex;
@@ -90,8 +90,8 @@ header{
         justify-content: center;
         align-items: center;
         padding: 0px;
-        width: 169px;
-        height: 116px;
+        width: 10rem;
+        height: 7.25rem;
         left: 17%;
     }
     .userProfilePic{
@@ -115,7 +115,7 @@ header{
         text-align: center;
     }
 
-/*************TABS*******/
+/*************Menu*******/
     .menuSections input {
         display:none;
     }
@@ -123,7 +123,7 @@ header{
         text-transform:uppercase;
         text-decoration:none;
     }
-    .menuTabItem input:checked + label{
+    .menuTabItem{
         text-transform:uppercase;
         text-decoration:underline;
         font-weight:600;
@@ -145,7 +145,8 @@ main{
      .sectionConseil{
         display: flex;
         flex-direction: column;
-        align-items:center;
+        justify-content: flex-start;
+        align-items:flex-start;
         overflow-y: scroll;
         scroll-behavior: smooth;
         margin-top:1.5rem;
@@ -230,7 +231,7 @@ main{
  .sectionInspi{
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items:flex-start;
     margin-top:1.5rem;
     margin-bottom:1.5rem;
     gap:1.25rem;
@@ -283,27 +284,30 @@ main{
 /***Section Slides***/
 
 .slider {
-  width: 100%;
-  max-width: 37.5rem;
-  height: 25rem;
-  text-align: center;
-  border-radius: 1.25rem;
-  overflow: hidden;
-  position: relative;
+    width: 100%;
+    max-width: 37.5rem;
+    height: auto;
+    text-align: center;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    position: relative;
 }
 .slides {
-  display: flex;
-  overflow-x: scroll;
-  position: relative;
-  scroll-behavior: smooth;
+    height:inherit;
+    width:fit-content;
+    display: flex;
+    position: relative;
+    align-content:flex-start ;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
 }
 .slide {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-shrink: 0;
   width: 100%;
-  height:25rem; /*ceci est bizarre*/
+  height:70vh; /*ceci est bizarre*/
   scroll-snap-align: center;
   margin-right: 0px;
   box-sizing: border-box;
@@ -340,7 +344,7 @@ a.slide__next,
   top: 48%;
   width: 35px;
   height: 35px;
-  border: solid black;
+  border: solid #5F5F5F ;
   border-width: 0 4px 4px 0;
   padding: 3px;
   box-sizing: border-box;
