@@ -34,39 +34,39 @@ header{
     display:flex;
     justify-content:center;
 }
-/**Container brand***/
-.contBrand{ 
-    position: static;
-    display:flex;
-    justify-content:center;
-    align-items: baseline;
-    gap:0.25rem;
-    height:auto;
-    padding-top:2rem;
-    }
-/**Content Logo**/
-.headerLogo{
-    position:relative;
-    width: 3.4rem;
-    height: 2rem;
-    display:flex;
-    justify-content:flex-start;
-    align-items: baseline;
-    top: calc(50% - 1.25rem);
-    }
-.brandText{
-    width: 9.25rem;
-    height: 3.375rem;
-    font-family: Fredoka One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2.25rem;
-    line-height: 150%;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    color: #5F5F5F;
+    /**Container brand***/
+    .contBrand{ 
+        position: static;
+        display:flex;
+        justify-content:center;
+        align-items: baseline;
+        gap:0.25rem;
+        height:auto;
+        padding-top:2rem;
         }
+    /**Content Logo**/
+    .headerLogo{
+        position:relative;
+        width: 3.4rem;
+        height: 2rem;
+        display:flex;
+        justify-content:flex-start;
+        align-items: baseline;
+        top: calc(50% - 1.25rem);
+        }
+    .brandText{
+        width: 9.25rem;
+        height: 3.375rem;
+        font-family: Fredoka One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.25rem;
+        line-height: 150%;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        color: #5F5F5F;
+            }
 
 /**********NAV*************-NAV*****************NAV****/
 .navSect{
@@ -116,10 +116,8 @@ header{
     }
 
 /*************Menu*******/
-    .menuSections input {
-        display:none;
-    }
-    .menuSections{
+
+    .menuSections>a {
         text-transform:uppercase;
         text-decoration:none;
     }
@@ -243,6 +241,7 @@ main{
     flex-direction:column;
     justify-content:center;
     height:auto;
+    border-radius:3.125rem;
     gap:1rem;
 }
 .prevArt{
@@ -315,45 +314,3 @@ main{
   transform-origin: center center;
   transform: scale(1);
 }
-.slide__text {
-  font-size: 40px;
-  font-weight: bold;
-  font-family: sans-serif;
-}
-.slide a {
-  background: none;
-  border: none;
-}
-a.slide__prev,
-.slider::before {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  left: 5%;
-}
-a.slide__next,
-.slider::after {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  right: 5%;
-}
-.slider::before,
-.slider::after,
-.slide__prev,
-.slide__next {
-  position: absolute;
-  top: 48%;
-  width: 35px;
-  height: 35px;
-  border: solid #5F5F5F ;
-  border-width: 0 4px 4px 0;
-  padding: 3px;
-  box-sizing: border-box;
-}
-.slider::before,
-.slider::after {
-  content: "";
-  z-index: 1;
-  background: none;
-  pointer-events: none;
-}
- 
