@@ -1,11 +1,19 @@
 @font-face{
     font-family:"Fredoka One";
-    src: url ("hetic-pmd-GONZALEZ-projet/Assets/Fonts/Fredoka_One/FredokaOne-Regular.woff2");
+    src: url ("hetic-pmd-GONZALEZ-projet/Assets/Fonts/Fredoka_One/FredokaOne-Regular.woff2") format("woff2"),
+        url ("hetic-pmd-GONZALEZ-projet/Assets/Fonts/Fredoka_One/FredokaOne-Regular.woff") format("woff");
 }
 
 @font-face{
     font-family:"Lexend";
-    src: url ("hetic-pmd-GONZALEZ-projet/Assets/Fonts/Lexend/Lexend-Bold.woff2","hetic-pmd-GONZALEZ-projet/Assets/Fonts/Lexend/Lexend-Medium.woff2", "hetic-pmd-GONZALEZ-projet/Assets/Fonts/Lexend/Lexend-Regular.woff2", "hetic-pmd-GONZALEZ-projet/Assets/Fonts/Lexend/Lexend-SemiBold.woff2");
+    src: url ("hetic-pmd-GONZALEZ-projet/Assets/Fonts/Lexend/Lexend-Bold.woff2","hetic-pmd-GONZALEZ-projet/Assets/Fonts/Lexend/Lexend-Medium.woff2", "hetic-pmd-GONZALEZ-projet/Assets/Fonts/Lexend/Lexend-Regular.woff2", "hetic-pmd-GONZALEZ-projet/Assets/Fonts/Lexend/Lexend-SemiBold.woff2") format(woff2),
+    url ("hetic-pmd-GONZALEZ-projet/Assets/Fonts/Lexend/Lexend-Bold.woff","hetic-pmd-GONZALEZ-projet/Assets/Fonts/Lexend/Lexend-Medium.woff", "hetic-pmd-GONZALEZ-projet/Assets/Fonts/Lexend/Lexend-Regular.woff", "hetic-pmd-GONZALEZ-projet/Assets/Fonts/Lexend/Lexend-SemiBold.woff") format(woff);
+}
+
+@font-face{
+    font-family:"Work Sans";
+    src: url ("hetic-pmd-GONZALEZ-projet/Assets/Fonts/Work Sans/WorkSans-BoldItalic.woff","hetic-pmd-GONZALEZ-projet/Assets/Fonts/Work Sans/WorkSans-Regular.woff", "hetic-pmd-GONZALEZ-projet/Assets/Fonts/Work Sans/WorkSans-SemiBold.woff") format(woff),
+    url ("hetic-pmd-GONZALEZ-projet/Assets/Fonts/Work Sans/WorkSans-BoldItalic.woff2","hetic-pmd-GONZALEZ-projet/Assets/Fonts/Work Sans/WorkSans-Regular.woff2", "hetic-pmd-GONZALEZ-projet/Assets/Fonts/Work Sans/WorkSans-SemiBold.woff2") format(woff2);
 }
 
 body{
@@ -26,6 +34,10 @@ h3{
     text-align: center;
     color: #5F5F5F;
 }
+h2{
+    display:none;
+}
+
 
 /***********HEADER****************HEADER*********HEADER***********/
 header{
@@ -34,39 +46,39 @@ header{
     display:flex;
     justify-content:center;
 }
-    /**Container brand***/
-    .contBrand{ 
-        position: static;
-        display:flex;
-        justify-content:center;
-        align-items: baseline;
-        gap:0.25rem;
-        height:auto;
-        padding-top:2rem;
+/**Container brand***/
+.contBrand{ 
+    position: static;
+    display:flex;
+    justify-content:center;
+    align-items: baseline;
+    gap:0.25rem;
+    height:auto;
+    padding-top:2rem;
+    }
+/**Content Logo**/
+.headerLogo{
+    position:relative;
+    width: 3.4rem;
+    height: 2rem;
+    display:flex;
+    justify-content:flex-start;
+    align-items: baseline;
+    top: calc(50% - 1.25rem);
+    }
+.brandText{
+    width: 9.25rem;
+    height: 3.375rem;
+    font-family: Fredoka One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.25rem;
+    line-height: 150%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    color: #5F5F5F;
         }
-    /**Content Logo**/
-    .headerLogo{
-        position:relative;
-        width: 3.4rem;
-        height: 2rem;
-        display:flex;
-        justify-content:flex-start;
-        align-items: baseline;
-        top: calc(50% - 1.25rem);
-        }
-    .brandText{
-        width: 9.25rem;
-        height: 3.375rem;
-        font-family: Fredoka One;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 2.25rem;
-        line-height: 150%;
-        display: flex;
-        justify-content:flex-start;
-        align-items: center;
-        color: #5F5F5F;
-            }
 
 /**********NAV*************-NAV*****************NAV****/
 .navSect{
@@ -139,30 +151,8 @@ main{
         padding: 0px;
         width: 100%;
 }
-/****SECTION CONSEIL****/
-     .sectionConseil{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items:flex-start;
-        overflow-y: scroll;
-        scroll-behavior: smooth;
-        margin-top:1.5rem;
-        margin-bottom:1.5rem;
-        gap:1.25rem;
-        width: 90%;
-    } 
-        .sectionTabTitle{
-        display:none;
-        /*ceci en desktop apparaîtra*/
-        }
-        .menuSections{
-        display:flex;
-        flex-grow:1;
-        justify-content: center;
-        gap:20px;
-        }
-/****CONTENT****/
+
+/****SEARCH BAR****/
     .searchBar{
         position:static;
         display:flex;
@@ -176,7 +166,7 @@ main{
         padding:0.25rem;
     }
     .searchBar:focus-within{
-        border: 2px solid #428A60;
+        border: 3px solid #357377;
     }
     .contLeftSearch{
         position:static;
@@ -199,33 +189,65 @@ main{
         font-size:0.875rem;
     }.contLeftSearch
 
-/****CARD PROFILES****/
-    .cardPro{/**Container card*/
+/***NAV SECTIONS**/
+        .sectionTabTitle{
+        display:none;
+        /*ceci en desktop apparaîtra*/
+        }
+        .menuSections{
         display:flex;
-        justify-content:flex-start;
-        height:auto;
-        gap:0.25rem;
+        flex-grow:1;
+        justify-content: center;
+        gap:20px;
+        }
+        .slider__navlink:link{
+            color:#357377;
+            font-family: Work Sans, sans-serif;
+            text-decoration:none;
+        }
+        .slider__navlink:visited{
+            text-decoration:none;
+        }
+/********SECTION CONSEIL*********/
+.sectionConseil{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+    gap:1.25rem;
+    width: 90%;
+} 
+/****CARD PROFILES****/
+.cardPro{/**Container card*/
+    display:flex;
+    justify-content:flex-start;
+    height:auto;
+    gap:0.25rem;
+}
+    .contProfInfo{
+        display: flex;
+        flex-direction:column ;
+        justify-content:center;
+        align-items: flex-start;
     }
-        .contProfInfo{
-            display: flex;
-            flex-direction:column ;
-            justify-content:center;
-            align-items: flex-start;
-        }
-        .txtProfInfo{
-            width:13rem;
-            height:auto;
-            display:flex;
-            font-family: Work Sans;
-            font-style: italic;
-            text-align:left;
-            font-weight: normal;
-            font-size: 14px;
-            color: #357377;
-            mix-blend-mode: normal;
-        }
+    .txtProfInfo{
+        width:13rem;
+        height:auto;
+        display:flex;
+        font-family: Work Sans;
+        font-style: italic;
+        text-align:left;
+        font-weight: normal;
+        font-size: 14px;
+        color: #357377;
+        mix-blend-mode: normal;
+    }
 
-/********SECTION INSPIRATION********/
+/*******SECTION INSPIRATION********/
  .sectionInspi{
     display: flex;
     flex-direction: column;
@@ -235,22 +257,23 @@ main{
     gap:1.25rem;
     width: 90%;
 } 
-/****CARD ARTICLES****/
-.cardArticle{/**Container card*/
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    height:auto;
-    border-radius:3.125rem;
-    gap:1rem;
-}
-.prevArt{
-    text-align:justify;
-    display:flex;
-    flex-wrap:none;
+    /****CARD ARTICLES****/
+    .cardArticle{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        height:auto;
+        border-radius:3.125rem;
+        gap:1rem;
+    }
+        /*Text preview*/ 
+        .prevArt{
+                text-align:justify;
+                display:flex;
+                flex-wrap:wrap;
 
-}
-    /***CARD AUTHOR**/
+            }
+    /*********CARD AUTHOR**/
     .cardAuthor{
         display:flex;
         flex-wrap: wrap;
@@ -292,8 +315,8 @@ main{
     position: relative;
 }
 .slides {
-    height:inherit;
-    width:fit-content;
+    height:fit-content;
+    width:auto;
     display: flex;
     position: relative;
     align-content:flex-start ;
@@ -306,11 +329,47 @@ main{
   align-items: flex-start;
   flex-shrink: 0;
   width: 100%;
-  height:70vh; /*ceci est bizarre*/
+  height:min-content;
   scroll-snap-align: center;
   margin-right: 0px;
   box-sizing: border-box;
   background: white;
   transform-origin: center center;
   transform: scale(1);
+}
+
+@media(min-width: 31.25rem){
+
+    body {
+        background-color:#428A60;
+
+    }
+    .brandText{
+        color:#FFFFFD;
+    }
+    .navSect{
+
+        display:flex;
+        flex-direction:row-reverse;
+        justify-content: center;
+        align-items:baseline;
+
+    }
+    .contUserInfo{
+
+        width:fit-content;
+        color:#FFFFFD;
+    }
+    .menuSections{
+        width:auto;
+        height:fit-content;
+    }
+
+    a:link{
+        color:#FFFFFD;
+        font-family: Work Sans, sans-serif;
+        text-decoration:none;
+    }
+
+
 }
