@@ -16,6 +16,10 @@
     url ("hetic-pmd-GONZALEZ-projet/Assets/Fonts/Work Sans/WorkSans-BoldItalic.woff2","hetic-pmd-GONZALEZ-projet/Assets/Fonts/Work Sans/WorkSans-Regular.woff2", "hetic-pmd-GONZALEZ-projet/Assets/Fonts/Work Sans/WorkSans-SemiBold.woff2") format(woff2);
 }
 
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
 body{
     width:100vw;
     height:100vh;
@@ -377,7 +381,4 @@ main{
         font-size:1rem;
         text-decoration:none;
     }
-    
-
-
 }
