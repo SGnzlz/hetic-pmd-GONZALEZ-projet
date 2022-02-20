@@ -203,6 +203,7 @@ main{
         .slider__navlink:link{
             color:#357377;
             font-family: Work Sans, sans-serif;
+            font-size:1rem;
             text-decoration:none;
         }
         .slider__navlink:visited{
@@ -266,6 +267,9 @@ main{
         border-radius:3.125rem;
         gap:1rem;
     }
+    .cardArticle img{
+        border-radius:3.125rem;
+    }
         /*Text preview*/ 
         .prevArt{
                 text-align:justify;
@@ -313,6 +317,7 @@ main{
     border-radius: 1.25rem;
     overflow: hidden;
     position: relative;
+   
 }
 .slides {
     height:fit-content;
@@ -322,6 +327,7 @@ main{
     align-content:flex-start ;
     overflow-x: scroll;
     scroll-behavior: smooth;
+    background-color:#FFFFFD;
 }
 .slide {
   display: flex;
@@ -333,7 +339,7 @@ main{
   scroll-snap-align: center;
   margin-right: 0px;
   box-sizing: border-box;
-  background: white;
+  background-color:#FFFFFD;
   transform-origin: center center;
   transform: scale(1);
 }
@@ -365,11 +371,13 @@ main{
         height:fit-content;
     }
 
-    a:link{
+    .slider__navlink:link{
         color:#FFFFFD;
         font-family: Work Sans, sans-serif;
+        font-size:1rem;
         text-decoration:none;
     }
+    
 
 
 }
